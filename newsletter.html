@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - Daft Punk</title>
+</head>
+<body>
+    <header>
+        <h1>Daft Punk - Newsletter</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="discografia.html">Discografia</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <article>
+            <h2>Subscriu-te a la nostra Newsletter</h2>
+            
+            <section>
+                <p>Uneix-te a la comunitat de Daft Punk i rep contingut exclusiu, notícies sobre reedicions, merchandising oficial i molt més directament a la teva bústia de correu.</p>
+                <p>Emplena el formulari següent per subscriure't:</p>
+            </section>
+
+            <section>
+                <form action="procesar-newsletter.php" method="post">
+                    <fieldset>
+                        <legend>Dades personals</legend>
+                        
+                        <p>
+                            <label for="nom">Nom *</label>
+                            <br>
+                            <input type="text" id="nom" name="nom" required maxlength="50">
+                        </p>
+                        
+                        <p>
+                            <label for="cognoms">Cognoms *</label>
+                            <br>
+                            <input type="text" id="cognoms" name="cognoms" required maxlength="100">
+                        </p>
+                        
+                        <p>
+                            <label for="email">Correu electrònic *</label>
+                            <br>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+                        
+                        <p>
+                            <label for="edat">Edat *</label>
+                            <br>
+                            <input type="number" id="edat" name="edat" min="13" max="120" required>
+                        </p>
+                        
+                        <p>
+                            <label for="pais">País *</label>
+                            <br>
+                            <select id="pais" name="pais" required>
+                                <option value="">-- Selecciona un país --</option>
+                                <option value="AD">Andorra</option>
+                                <option value="ES">Espanya</option>
+                                <option value="FR">França</option>
+                                <option value="IT">Itàlia</option>
+                                <option value="PT">Portugal</option>
+                                <option value="UK">Regne Unit</option>
+                                <option value="US">Estats Units</option>
+                                <option value="DE">Alemanya</option>
+                                <option value="NL">Països Baixos</option>
+                                <option value="BE">Bèlgica</option>
+                                <option value="CH">Suïssa</option>
+                                <option value="MX">Mèxic</option>
+                                <option value="AR">Argentina</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CL">Xile</option>
+                                <option value="CO">Colòmbia</option>
+                                <option value="JP">Japó</option>
+                                <option value="AU">Austràlia</option>
+                                <option value="CA">Canadà</option>
+                                <option value="OTHER">Altres</option>
+                            </select>
+                        </p>
+                        
+                        <p>
+                            <label for="data-naixement">Data de naixement</label>
+                            <br>
+                            <input type="date" id="data-naixement" name="data-naixement">
+                        </p>
+                    </fieldset>
+
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Interessos musicals</legend>
+                        
+                        <p>Selecciona els teus àlbums favorits de Daft Punk:</p>
+                        
+                        <p>
+                            <input type="checkbox" id="album-homework" name="albums" value="homework">
+                            <label for="album-homework">Homework (1997)</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="album-discovery" name="albums" value="discovery">
+                            <label for="album-discovery">Discovery (2001)</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="album-human" name="albums" value="human-after-all">
+                            <label for="album-human">Human After All (2005)</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="album-ram" name="albums" value="random-access-memories">
+                            <label for="album-ram">Random Access Memories (2013)</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="album-alive" name="albums" value="alive">
+                            <label for="album-alive">Alive 2007</label>
+                        </p>
+                    </fieldset>
+
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Preferències de contingut</legend>
+                        
+                        <p>Quin tipus de contingut t'agradaria rebre?</p>
+                        
+                        <p>
+                            <input type="checkbox" id="novetats" name="interessos" value="novetats" checked>
+                            <label for="novetats">Novetats i anuncis oficials</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="merchandising" name="interessos" value="merchandising">
+                            <label for="merchandising">Merchandising i productes oficials</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="reedicions" name="interessos" value="reedicions">
+                            <label for="reedicions">Reedicions i vinils</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="concerts" name="interessos" value="concerts">
+                            <label for="concerts">Concerts i esdeveniments</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="colaboracions" name="interessos" value="colaboracions">
+                            <label for="colaboracions">Col·laboracions i projectes especials</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="historia" name="interessos" value="historia">
+                            <label for="historia">Història i contingut d'arxiu</label>
+                        </p>
+                    </fieldset>
+
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Freqüència de comunicació</legend>
+                        
+                        <p>Amb quina freqüència vols rebre correus nostres?</p>
+                        
+                        <p>
+                            <input type="radio" id="freq-setmanal" name="frequencia" value="setmanal">
+                            <label for="freq-setmanal">Setmanal</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" id="freq-mensual" name="frequencia" value="mensual">
+                            <label for="freq-mensual">Mensual</label>
+                        </p>
+                        
+                        <p>
+                            <input type="radio" id="freq-nomesnovetat" name="frequencia" value="nomes-novetats">
+                            <label for="freq-nomesnovetat">Només quan hi hagi novetats importants</label>
+                        </p>
+                    </fieldset>
+
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Comentaris addicionals</legend>
+                        
+                        <p>
+                            <label for="comentaris">Tens algun comentari o suggeriment?</label>
+                            <br>
+                            <textarea id="comentaris" name="comentaris" rows="5" cols="50" placeholder="Escriu aquí els teus comentaris..."></textarea>
+                        </p>
+                    </fieldset>
+
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Confirmació</legend>
+                        
+                        <p>
+                            <input type="checkbox" id="acceptar-condicions" name="acceptar-condicions" required>
+                            <label for="acceptar-condicions">Accepto la política de privacitat i els termes i condicions *</label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" id="comunicacions-comercials" name="comunicacions-comercials">
+                            <label for="comunicacions-comercials">Accepto rebre comunicacions comercials de tercers col·laboradors</label>
+                        </p>
+                    </fieldset>
+
+                    <br>
+                    
+                    <p>
+                        <button type="submit">Subscriure'm</button>
+                        <button type="reset">Esborrar formulari</button>
+                    </p>
+                    
+                    <p><small>* Camps obligatoris</small></p>
+                </form>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Daft Punk Daniel Vega Macias.</p>
+    </footer>
+
+</body>
+</html>
